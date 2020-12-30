@@ -1,8 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect} from 'react';
 
 function MyComponent() {
-    // "count"라는 새 상태 변수 선언
-    const[count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
+
+    //componentDidMount, componentDidUpdate와 비슷
+    useEffect(() => {
+        // 브라우저 API를 이용해 문서 타이틀을 업데이트
+        document.title = `You clicked ${count} times`;
+    });
 
     return (
         <div>
