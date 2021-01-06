@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("component");
+    console.log("componentDidMount");
   }
 
   handleClick = () => {

@@ -25,7 +25,7 @@ class MyComponent extends Component {
     }
   }
 
-  componentWillUnMount() {
+  componentWillUnmount() {
     console.log("Good Bye");
   }
 
